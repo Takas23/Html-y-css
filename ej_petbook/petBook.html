@@ -6,19 +6,41 @@
     
 <h1>¡Bienvenido a PetBook!</h1>
 <p>La nueva red social para mascotas</p>
-<form>
+<form action="https://formspree.io/d.takas23@gmail.com" method="POST">
     <label for="nombre_mascota">Nombre:</label>
     <input type="text" id="nombre_mascota" name="username" placeholder="Nombre de la mascota" required>
-
-    <label>Edad: <input type="number" id="edad_mascota" name="edad" placeholder="Edad de la mascota" required></label>
-
+<br>
+    <label>Edad: <input type="number" id="edad_mascota" name="edad" placeholder="Edad de la mascota"></label>
+<br>
     <label for="mail">e-mail:</label>
-    <input type="email" id="mail" name="mail" placeholder="e-mail" required>
-
-    <label>Contraseña: <input type="password" id="pasword" name="pasword" placeholder="Contraseña" required></label>
-
+    <input type="email" id="mail" name="mail" placeholder="e-mail">
+<br>
+    <label>Contraseña: <input type="password" id="pasword" name="pasword" placeholder="Contraseña"></label>
+<br>
     <label for="color">Color de la mascota:</label>
-    <input type="color" id="color" name="color" placeholder="Color de la mascota" required>
+    <input type="color" id="color" name="color" placeholder="Color de la mascota">
+<br>
+    <label>Genero: <label>Macho: <input type="radio" name="genero" value="macho"></label>
+    <label>Hembra: <input type="radio" name="genero" value="hembra" ></label></label>
+<br>
+    <label>Tipo de mascota:
+        <select name="tipo_de_mascota">
+            <option value="gato">Gato</option>
+            <option value="perro">Perro</option>
+            <option value="cobayo">Cobayo</option>
+            <option value="araña">Araña</option>
+        </select>
+    </label>
+<br>
+    <label>Contanos como es tu mascota: <br>
+        <textarea name="descripcion" cols="40" rows="10"></textarea>
+    </label>
+    
+<br>
+    <label for="bases">Acepto las bases y condiciones</label>
+<br>
+    <input type="checkbox" id="bases" name="bases_y_condiciones" value="acepta">
+    
 
     <input type="submit">
 </form>    
